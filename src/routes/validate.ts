@@ -77,7 +77,7 @@ export default async function validateRoutes(app: FastifyInstance) {
       },
     },
     async (request, reply) => {
-      const { cpf, cep, email } = request.body as any;
+      const { cpf, cep, email } = bodySchema.parse(request.body);
 
       const resultado: Record<string, any> = {};
 
