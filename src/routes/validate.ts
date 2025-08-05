@@ -49,7 +49,7 @@ export default async function validateRoutes(app: FastifyInstance) {
           bairro: { type: 'string' },
           localidade: { type: 'string' },
           uf: { type: 'string' },
-          erro: { type: 'string' }, 
+          erro: { type: 'string' },
         },
       },
       email: {
