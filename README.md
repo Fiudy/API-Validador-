@@ -1,5 +1,3 @@
-Claro! Aqui está o README completo, totalmente em Markdown, pronto para usar:
-
 
 # 🛡️ Validador de Dados - API
 
