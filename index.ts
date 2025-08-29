@@ -3,6 +3,7 @@ import cors from '@fastify/cors'
 import swagger from '@fastify/swagger';
 import swaggerUI from '@fastify/swagger-ui';
 import validateRoutes from './src/routes/validate';
+import validarTicket from './src/routes/validarTicket';
 
 const app = Fastify();
 
@@ -40,6 +41,7 @@ async function bootstrap() {
     });
 
     await app.register(validateRoutes);
+    await app.register(validarTicket);
 
     await app.listen({ port: 3001, host: '0.0.0.0' });
     console.log('API rodando em http://localhost:3001');
