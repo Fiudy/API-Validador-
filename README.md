@@ -47,13 +47,13 @@ npm run dev
 ```
 
 A API estará disponível em:
-`http://localhost:3001`
+`http://localhost:8000`
 
 ### Documentação Swagger
 
 Acesse a documentação interativa para testar endpoints no navegador:
 
-`http://localhost:3001/docs`
+`http://localhost:8000/docs`
 
 ---
 
@@ -62,7 +62,7 @@ Acesse a documentação interativa para testar endpoints no navegador:
 ### Validar CPF
 
 * **Método:** `POST`
-* **URL:** `/validate/cpf`
+* **URL:** `/validate`
 * **Corpo:**
 
 ```json
@@ -84,8 +84,8 @@ Acesse a documentação interativa para testar endpoints no navegador:
 ### Consultar CEP
 
 * **Método:** `GET`
-* **URL:** `/validate/cep/:cep`
-* **Exemplo:** `/validate/cep/01001000`
+* **URL:** `/validate`
+* **Exemplo:** `/validate/01001000`
 * **Resposta:**
 
 ```json
@@ -110,7 +110,7 @@ Acesse a documentação interativa para testar endpoints no navegador:
 ### Validar Email
 
 * **Método:** `POST`
-* **URL:** `/validate/email`
+* **URL:** `/validate`
 * **Corpo:**
 
 ```json
